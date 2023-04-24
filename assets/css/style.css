@@ -33,5 +33,11 @@ p {
 }
 
 #start {
-
+    background-color: #a58bbd;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    margin-bottom: 40px;
 }
