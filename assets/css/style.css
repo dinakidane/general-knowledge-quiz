@@ -1,0 +1,37 @@
+/*Homepage*/
+
+.heading {
+    font-family: "Arvo", sans-serif ;
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+.logo {
+    height: 70px;
+    padding-right: 5px;
+}
+
+#homepage-div {
+    text-align: center;
+    background-color: #dbcfef;
+    box-sizing: border-box;
+    width: 85%;
+    max-width: 830px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+}
+
+#first-heading {
+    font-size: 35px;
+}
+
+p {
+    font-size: 25px;
+}
+
+#start {
+
+}
