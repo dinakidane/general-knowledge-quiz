@@ -7,11 +7,6 @@
     
 }
 
-.logo {
-    height: 70px;
-    padding-right: 5px;
-}
-
 #homepage-div {
     text-align: center;
     background-color: #dbcfef;
@@ -32,7 +27,7 @@ p {
     font-size: 25px;
 }
 
-#start {
+#start-btn {
     background-color: #a15be1;
     color: #ffffff;
     font-size: 1.2rem;
@@ -40,4 +35,33 @@ p {
     text-transform: uppercase;
     padding: 10px 30px;
     margin-bottom: 40px;
+}
+
+/* First Question */
+
+.quiz {
+    padding: 20px 0;
+}
+
+.quiz h2 {
+    font-size: 18px;
+    color: black;
+    font-weight: 600px;
+}
+
+#questions {
+    font-family: "Arvo", sans-serif;
+}
+
+.button {
+    background: #ffffff;
+    color: #222;
+    font-family: "Arvo", sans-serif;
+    width: 50%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
 }
