@@ -113,7 +113,13 @@ const questions = {
 
 const questionElement = document.getElementById("questions");
 const answerButton = document.getElementById("answer-buttons");
-const nextButton = doc.getElementById("next-button");
+const startButton = document.getElementById("start-btn")
+const nextButton = document.getElementById("next-button");
+
+let currentQuestionIndex = 0;
+let score = 0;
+
+function startQuiz()
 
 
 
