@@ -4,6 +4,17 @@ document.addEventListener("DOMContentLoaded", function()) {
     let buttons = document.getElementsByTagName("button");
 }
 
+const start-btn = document.querySelector(".start-btn");
+
+start-btn.onclick = () => {
+    quiz.questionElement.add("game");
+    document.getElementById("quiz").style.display = "none";
+  };
+
+/**
+ * The quiz and its answers
+ */
+
 const questions = {
     {
         question: "Who is the current vice president of the United States?",
@@ -86,15 +97,6 @@ const questions = {
         question: "Where is the largest Disney park in the world?",
         answers: [
             {text: "London", correct: false},
-            {text: "Orlando, Florida", correct: true},
-            {text: "Paris", correct: false},
-            {text: "Hong Kong", correct: false},
-        ]
-    }
-    {
-        question: "Where is the largest Disney park in the world?",
-        answers: [
-            {text: "London", correct: false},
             {text: "Orlando", correct: true},
             {text: "Paris", correct: false},
             {text: "Hong Kong", correct: false},
@@ -113,13 +115,31 @@ const questions = {
 
 const questionElement = document.getElementById("questions");
 const answerButton = document.getElementById("answer-buttons");
-const startButton = document.getElementById("start-btn")
+
 const nextButton = document.getElementById("next-button");
 
 let currentQuestionIndex = 0;
 let score = 0;
 
-function startQuiz()
+function startQuiz() {
+    let currentQuestionIndex = 0;
+    score = 0; 
+    nextButton.innerHTML = "Next";
+    revealQuestion();
+}
 
+function revealQuestion() {
+    let currentQuestion = questions[currentQuestionIndex];
+    let questionNo = currentQuestionIndex + 1;
+    questionElement.innerHTML = questionNo + "." + currentQuestion
+    question
+}
+
+currentQuestion.answers.forEach(answer => {
+    const button = document.createElement("button");
+    button.innerHTML = answer.text;
+    button.classList.add("button");
+    answerButton.appendChild()
+})
 
 
