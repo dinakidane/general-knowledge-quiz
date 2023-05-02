@@ -1,57 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- font awesome and google fonts -->
-   
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/style.css">
     <title>General Knowledge Quiz!</title>
 </head>
+
+
 <body>
 
-    <h1 class="heading">General Knowledge Quiz!</h1>
-
-    <!-- Homepage -->
-
-    <div id="homepage-div" class="heading">
-        <h2 id="first-heading">Put your general knowledge to the test!</h2>
-        <p>This quiz includes 10 general knowledge questions!</p>
-        <p>How many can you get right?</p>
-        <button id="start-btn">Start the quiz!</button>
-    </div>
-
-    <!--Quiz Game-->
-
-    <div id="quiz">
+    <div>
         <h1 class="heading">General Knowledge Quiz!</h1>
 
-        <h2 id="questions">Question goes here</h2>
-        <div id="answer-buttons">  
-            <button class="button">Answer 1</button>
-            <button class="button">Answer 2</button>
-            <button class="button">Answer 3</button>
-            <button class="button">Answer 4</button>
+        <!--Controls Area-->
+
+        <div class="controls">
+            <button class="btn btn-restart" id="restart">Restart</button>
+            <button class="btn btn-next" id="next">Next</button>
+            <button class="btn btn-submit" id="submit">Submit</button>
         </div>
-        <button id="next-button">Next</button>
+        <!-- Homepage -->
+
+        <div id="homepage-div" class="heading">
+            <h2 id="first-heading">Put your general knowledge to the test!</h2>
+            <p>This quiz includes 10 general knowledge questions!</p>
+            <p>How many can you get right?</p>
+            <button id="start-btn">Start the quiz!</button>
+        </div>
+
+        <!--Question and Answer options-->
+
+        <div class="content" id="question-area">
+            <div id="question-text"></div>
+            <div class="options">
+                <button class="button" id="true">True</button>
+                <button class="button" id="false1">False</button>
+                <button class="button" id="false2">False</button>
+                <button class="button" id="false3">False</button>
+            </div>
+        </div>
+
+        <!--Score Area-->
+
+        <div class="score">
+            <span id="user-score">0</span>
+            <span></span>
+            <span id="total-score">0</span>
+        </div>
+
     </div>
 
-    <!-- Results -->
-    
-    <div id="results">
-        <h1 class="heading">General Knowledge Quiz!</h1>
-        <h2 id="results-heading">You scored:</h2>
-    </div>
-    
-    
-    
-    
+
+
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
